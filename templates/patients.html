@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Patients</title></head>
+<body>
+    <h1>Patients</h1>
+    <ul>
+        {% for patient in patients %}
+        <li>{{ patient.name }} (Age: {{ patient.age }}, Contact: {{ patient.contact }})</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back Home</a>
+</body>
+</html>

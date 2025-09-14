@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Doctors</title></head>
+<body>
+    <h1>Our Doctors</h1>
+    <ul>
+        {% for doctor in doctors %}
+        <li>{{ doctor.name }} - {{ doctor.specialty }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back Home</a>
+</body>
+</html>
